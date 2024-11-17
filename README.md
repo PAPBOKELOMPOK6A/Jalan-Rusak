@@ -12,6 +12,7 @@ Infrastruktur jalan merupakan salah satu elemen vital dalam pembangunan dan akti
 Aplikasi Pelaporan dan Monitoring Jalan Rusak di Kota Samarinda. Aplikasi ini berbasis aplikasi Java dengan antarmuka GUI, yang memungkinkan pengguna umum (User) untuk melaporkan kondisi jalan yang mengalami kerusakan, serta memberikan akses kepada petugas dinas (Admin) untuk memantau, mengelola, dan memperbarui status perbaikan jalan tersebut. Melalui aplikasi ini, diharapkan masyarakat dapat lebih mudah dan cepat melaporkan jalan berlubang atau rusak. Sementara itu, pihak Admin dari Dinas Pekerjaan Umum dapat melakukan manajemen laporan dengan lebih efisien, termasuk melakukan pencarian, menyortir laporan berdasarkan tingkat kerusakan, dan memberikan tindak lanjut yang diperlukan. Adanya fitur CRUD (Create, Read, Update, Delete) untuk laporan juga memudahkan Admin dalam memvalidasi dan menghapus laporan yang tidak relevan atau telah selesai diperbaiki.
 
 ## 📍Flowchart
+![image](https://github.com/user-attachments/assets/5835456b-b8ae-4b90-adad-f0439859786e)
 
 ## 📍Aktivity Diagram
 ![image](https://github.com/user-attachments/assets/dc149cc8-4784-4156-910b-debce08355f0)
