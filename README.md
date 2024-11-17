@@ -5,18 +5,18 @@ Kelompok 6A
 3. Widia Saputri 2309116019
 4. Fitriani 2309116021
 
-## Latar Belakang
+## 📍Latar Belakang
 
-## Deskripsi Project
+## 📍Deskripsi Project
 
-## Flowchart
+## 📍Flowchart
 
-## Aktivity Diagram
+## 📍Aktivity Diagram
 
-## Use Case
+## 📍Use Case
 
-## Logical ERD
+## 📍Logical ERD
 
-## Relational ERD
+## 📍Relational ERD
 
-## Source Code dan Penjelasaan
+## 📍Source Code dan Penjelasaan
