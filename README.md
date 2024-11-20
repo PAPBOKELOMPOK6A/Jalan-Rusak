@@ -6,6 +6,17 @@ Kelompok 6A
 4. Fitriani 2309116021
 
 ## 📍Penerapan 4 Pilar
+1. Encapsulation
+   -> Menyembunyikan data objek dan hanya mengizinkan akses melalui metode khusus (getter/setter), untuk melindungi data tersebut.
+   Penerapan:
+   a. Pada class UserModel
+   
+   b. Pada class Pelapor
+   
+   c. Pada class Admin
+3. Abstract
+4. inheritance
+5. polymorphism
 
 ## 📍Screenshoot Output
 
