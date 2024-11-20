@@ -19,12 +19,19 @@ Kelompok 6A
 2. Abstract
    -> Menyederhanakan antarmuka dengan hanya menampilkan informasi penting dan menyembunyikan detail implementasi.
    
+   Penerapan:
+   
 3. inheritance
    -> Memungkinkan kelas anak mewarisi atribut dan metode dari kelas induk, sehingga kode bisa digunakan kembali.
+   
+   Penerapan:
    
 4. polymorphism
    -> Memungkinkan objek dari kelas yang berbeda untuk merespons metode yang sama dengan cara yang berbeda, tergantung jenis objeknya.
 
+   Penerapan:
+
+   
 ## 📍Screenshoot Output
 
 1. Tampilan Login
