@@ -13,6 +13,7 @@ Aplikasi Pelaporan dan Monitoring Jalan Rusak di Kota Samarinda. Aplikasi ini be
 
 ## 📍Flowchart
 ![image](https://github.com/user-attachments/assets/b18fd165-55dc-4050-9f4d-f57a2278364c)
+
 Flowchart ini menggambarkan alur sistem pelaporan jalan rusak. 
 
 ## 📍Aktivity Diagram
