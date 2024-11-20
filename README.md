@@ -32,9 +32,13 @@ b. Admin, jika dalam gambar admin ini bisa langsung login sebagai admin yang dim
 ![image](https://github.com/user-attachments/assets/0eae3afe-0e9c-48f7-99c6-c51397d5701e)
 
 Dalam ERD di atas memiliki 2 entitas yaitu User dan laporan dimana entitas User ini memiliki Subtype yaitu Pelapor dan Admin. Konsep supertype dan subtype digunakan untuk membedakan antara admin dan pelapor sebagai subtype dari entitas user. Admin dan pelapor memiliki atribut khusus, namun keduanya merupakan jenis akun dalam sistem lapor jalan.
+Dalam hubungan antar entitas, terdapat keterkaitan atau relasi wajib (mandatory) 
 
 ## 📍Relational ERD
 ![image](https://github.com/user-attachments/assets/5a9cad39-99cf-495a-a05b-b5ea7ae4ff5c)
 
 
 ## 📍Source Code dan Penjelasaan
+
+![image](https://github.com/user-attachments/assets/9bf9ead7-59e7-416e-91b2-3c3dced71f9c)
+
