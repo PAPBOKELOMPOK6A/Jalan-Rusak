@@ -8,7 +8,9 @@ Kelompok 6A
 ## 📍Penerapan 4 Pilar
 1. Encapsulation
    -> Menyembunyikan data objek dan hanya mengizinkan akses melalui metode khusus (getter/setter), untuk melindungi data tersebut.
+
    Penerapan:
+   
    a. Pada class UserModel
    
    b. Pada class Pelapor
