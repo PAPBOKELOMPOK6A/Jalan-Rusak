@@ -86,10 +86,10 @@ Dalam hubungan antar entitas, terdapat keterkaitan atau relasi wajib (mandatory)
     ![image](https://github.com/user-attachments/assets/e06f5a14-6122-471b-8941-ca4f104f2f18)
 
 15. Tampilan Filter Sesuai Tingkat Kerusakan
-    
-   ![image](https://github.com/user-attachments/assets/4f1c431e-5bd2-4f25-a989-2065905c04cf)
 
- Tampilan fitur filter ini berfungsi untuk menyaring laporan berdasarkan tingkat kerusakan, jadi si pelapor ini dapat memilih laporan yang sudah ada berdasarkan tingkat kerusakannya ada berat, sedang, dan ringan.
+    ![image](https://github.com/user-attachments/assets/4f1c431e-5bd2-4f25-a989-2065905c04cf)
+
+    Tampilan fitur filter ini berfungsi untuk menyaring laporan berdasarkan tingkat kerusakan, jadi si pelapor ini dapat memilih laporan yang sudah ada berdasarkan tingkat kerusakannya ada berat, sedang, dan ringan.
 
 
 16. Tampilan Searching Nama Jalan
