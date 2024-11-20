@@ -16,9 +16,14 @@ Kelompok 6A
    b. Pada class Pelapor
    
    c. Pada class Admin
-3. Abstract
-4. inheritance
-5. polymorphism
+2. Abstract
+   -> Menyederhanakan antarmuka dengan hanya menampilkan informasi penting dan menyembunyikan detail implementasi.
+   
+3. inheritance
+   -> Memungkinkan kelas anak mewarisi atribut dan metode dari kelas induk, sehingga kode bisa digunakan kembali.
+   
+4. polymorphism
+   -> Memungkinkan objek dari kelas yang berbeda untuk merespons metode yang sama dengan cara yang berbeda, tergantung jenis objeknya.
 
 ## 📍Screenshoot Output
 
