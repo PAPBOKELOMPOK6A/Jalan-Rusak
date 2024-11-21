@@ -5,6 +5,51 @@ Kelompok 6A
 3. Widia Saputri 2309116019
 4. Fitriani 2309116021
 
+## 📍Penjelasan Aplikasi Pelaporan dan Monitoring Jalan Rusak di Kota Samarinda
+
+Aplikasi Sistem Pelaporan dan Monitoring Jalan Rusak di Kota Samarinda adalah perangkat lunak berbasis Java yang dirancang untuk membantu masyarakat melaporkan kondisi jalan rusak serta memfasilitasi Dinas Pekerjaan Umum (DPU) dalam memantau dan mengelola laporan tersebut secara efisien. Menggunakan teknologi Java Swing untuk antarmuka pengguna (GUI) dan MySQL sebagai basis data, aplikasi ini menyediakan platform yang terstruktur untuk mencatat, menyimpan, dan mengelola informasi terkait kerusakan jalan.
+
+Tujuan utama aplikasi ini adalah menjadi sarana efektif bagi masyarakat Kota Samarinda untuk melaporkan kondisi jalan rusak, sekaligus mempermudah Dinas Pekerjaan Umum dalam mengelola laporan dengan lebih cepat, terorganisir, dan transparan. Dengan aplikasi ini, proses perbaikan jalan diharapkan dapat dilakukan secara lebih efisien, meningkatkan kualitas pelayanan publik dalam infrastruktur jalan.
+
+### Fitur Utama Aplikasi
+
+#### 1. Login dan Registrasi
+     -> Login: Pengguna (admin atau pelapor) dapat masuk ke sistem dengan memasukkan username dan password. Sistem akan memverifikasi kredensial dan mengarahkan pengguna ke menu sesuai peran mereka.
+     -> Registrasi: Calon pelapor yang belum memiliki akun dapat mendaftarkan diri dengan memasukkan data pribadi, seperti nama, email, dan nomor telepon serta membuat username dan password.
+
+#### 2. Menu Admin
+      Admin dapat:
+      -> Melihat laporan: Admin dapat menampilkan daftar laporan jalan rusak, 
+      -> Filter laporan: Admin dapat memfilter laporan berdasarkan status (belum diperbaiki, sedang diperbaiki, atau selesai), dan 
+      -> Searching: Admin dapat mencari laporan berdasarkan nama jalan.
+      -> Mengubah status laporan: Admin memiliki akses untuk mengedit status laporan dengan status "Belum diproses", "Sedang diproses", dan "Selesai" untuk mencerminkan progres perbaikan
+
+#### 3. Menu Pelapor
+      Pelapor dapat:
+      -> Membuat laporan baru: Pelapor memasukkan informasi seperti nama jalan, kecamatan, deskripsi kerusakan, dan tingkat kerusakan (ringan, sedang, berat).
+      -> Melihat laporan: Pelapor dapat melihat laporan mereka sendiri
+      -> Filter laoran: Pelapor dapat memfilter laporan berdasarkan tingkat kerusakan
+      -> Searching: Pelapor dapat mencari laporan tertentu berdasarkan nama jalan.
+
+#### 4. Manajemen Data
+      -> Aplikasi menggunakan database MySQL untuk menyimpan informasi pengguna, laporan, dan data pendukung lainnya. Data dapat diakses dan diperbarui secara real-time melalui antarmuka aplikasi.
+
+#### 5. Teknologi yang Digunakan
+      -> Aplikasi ini dibuat menggunakan Java Swing untuk tampilan antarmuka (GUI) dan MySQL sebagai tempat penyimpanan data. Jadi, semua data laporan dan akun pengguna disimpan dengan rapi.
+
+### Manfaat Aplikasi
+   #### Bagi Masyarakat:
+      -> Mempermudah pelaporan jalan rusak tanpa harus mendatangi kantor DPU.
+      -> Memberikan akses transparansi terhadap progres perbaikan laporan.
+
+   #### Bagi Dinas Pekerjaan Umum (DPU/Admin):
+      -> Mengorganisir laporan secara terstruktur.
+      -> Mempercepat proses pengambilan keputusan untuk perbaikan jalan.
+      -> Menyediakan data analitik untuk evaluasi infrastruktur.
+
+Aplikasi ini diharapkan bisa menjadi solusi untuk memperbaiki infrastruktur jalan di Samarinda, sekaligus membantu mengurangi risiko kecelakaan akibat jalan rusak.
+
+
 ## 📍Penerapan 4 Pilar
 1. Encapsulation
    -> Menyembunyikan data objek dan hanya mengizinkan akses melalui metode khusus (getter/setter), untuk melindungi data tersebut.
@@ -12,19 +57,40 @@ Kelompok 6A
    Penerapan:
    
    a. Pada class UserModel
-   
+
+
+       public String getUsername() {
+        return username;
+         }
+
+
+       public void setUsername(String username) {
+        this.username = username;
+         }
+
+
+       public String getPassword() {
+        return password;
+         }
+
+
+       public void setPassword(String password) {
+        this.password = password;
+         }
+
+
    b. Pada class Pelapor
    
    c. Pada class Admin
 
+      public String getJabatan() {
+        return jabatan;}
 
-       public String getJabatan() {
-        return jabatan;
-    }
 
-    public void setJabatan(String jabatan) {
-        this.jabatan = jabatan;
-    }
+      public void setJabatan(String jabatan) {
+        this.jabatan = jabatan;}
+
+
 
    
 3. Abstract
