@@ -231,54 +231,54 @@ Aplikasi ini diharapkan bisa menjadi solusi untuk memperbaiki infrastruktur jala
 
    Tampilan di atas merupakan tampilan login dimana user dan admin dapat memasukkan username dan password yang mereka miliki.
 
-3. Tampilan Registrasi
+2. Tampilan Registrasi
    
    ![image](https://github.com/user-attachments/assets/4f76b446-468e-42be-8a52-a822f9cfe99c)
    
    Tampilan diatas merupakan tampilan registrasi untuk pelapor yang tidak memiliki akun maka akan diminta untuk daftar atau registrasi, dimana pelapor memasukkan data dirinya. 
    
-6. Tampilan Menu Admin
+3. Tampilan Menu Admin
    
    ![image](https://github.com/user-attachments/assets/11ed16f3-0a57-4bd4-8bcc-d8ea69c233b1)
 
    Tampilan menu admin ini diberikan akses untuk mengelola laporan yang masuk melalui dua opsi utama, yaitu Lihat Laporan dan Edit Status Laporan. Setiap opsi dirancang untuk membantu admin dalam memantau dan memperbarui data laporan jalan rusak. Selain itu, admin juga memiliki opsi untuk kembali dari halaman jika tugas telah selesai.
 
-8. Tampilan Menu Edit Status Laporan
+4. Tampilan Menu Edit Status Laporan
    
     ![image](https://github.com/user-attachments/assets/eb39cfda-83fd-47e4-8ef2-64deb3dfac3e)
 
    Tampilan Edit Status Laporan, admin dapat memilih laporan tertentu dari daftar laporan yang sudah ada untuk diperbarui. Setelah laporan dipilih, sistem akan memberikan pilihan untuk mengubah status laporan sesuai kebutuhan, seperti dari "belum diproses" menjadi "sedang diproses" atau "selesai". Perubahan status ini akan disimpan ke dalam database dan menjadi rekam jejak laporan yang dapat dilihat kembali kapan saja oleh admin.
    
-9. Tampilan Menu Lihat Laporan Admin
+5. Tampilan Menu Lihat Laporan Admin
     
   ![image](https://github.com/user-attachments/assets/34ce0df6-ffb5-4acb-960d-1ab663902db2)
 
 Tampilan ini memberikan transparansi kepada pelapor untuk mengetahui laporan apa saja yang sudah ada dalam Aplikasi dan mempermudah mereka memantau laporan secara menyeluruh. 
   
-10. Tampilan Menu Pelapor
+6. Tampilan Menu Pelapor
     
     ![image](https://github.com/user-attachments/assets/357fe79f-4074-4e46-8d40-0936d0cb0930)
 
    Tampilan menu pelapor ini adalah menu milik pelapor yang sudah berhasil masuk ke aplikasi, , pelapor akan diberikan dua pilihan utama, yaitu Buat Laporan dan Lihat Laporan. Kedua pilihan ini dirancang untuk mempermudah pelapor dalam membuat laporan jalan rusak dan memantau laporan yang sudah diajukan. Selain itu, pelapor juga dapat memilih untuk keluar dari aplikasi setelah selesai menggunakan sistem.
 
-11. Tampilan Menu Buat Laporan
+7. Tampilan Menu Buat Laporan
     
     ![image](https://github.com/user-attachments/assets/6f32a68e-3c9d-4822-9fda-1867df04565c)
 
     Jika pelapor memilih Buat Laporan, sistem akan meminta pengguna untuk mengisi detail laporan, seperti nama jalan, kecamatan, tingkat kerusakan jalan, dan deskripsi. Setelah data diinput, laporan akan disimpan ke dalam database. 
    
-13. Tampilan Menu Lihat Laporan Pelapor
+8. Tampilan Menu Lihat Laporan Pelapor
     
     ![image](https://github.com/user-attachments/assets/e06f5a14-6122-471b-8941-ca4f104f2f18)
 
-15. Tampilan Filter Sesuai Tingkat Kerusakan
+9. Tampilan Filter Sesuai Tingkat Kerusakan
 
     ![image](https://github.com/user-attachments/assets/4f1c431e-5bd2-4f25-a989-2065905c04cf)
 
     Tampilan fitur filter ini berfungsi untuk menyaring laporan berdasarkan tingkat kerusakan, jadi si pelapor ini dapat memilih laporan yang sudah ada berdasarkan tingkat kerusakannya ada berat, sedang, dan ringan.
 
 
-16. Tampilan Searching Nama Jalan
+10. Tampilan Searching Nama Jalan
     
     ![image](https://github.com/user-attachments/assets/00441622-3794-45e4-9edf-742cfe441586)
     
