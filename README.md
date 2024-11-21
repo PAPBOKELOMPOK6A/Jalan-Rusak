@@ -19,14 +19,14 @@ Tujuan utama aplikasi ini adalah menjadi sarana efektif bagi masyarakat Kota Sam
 
 #### 2. Menu Admin
       Admin dapat:
-      -> Melihat laporan: Admin dapat menampilkan daftar laporan jalan rusak, 
-      -> Filter laporan: Admin dapat memfilter laporan berdasarkan status (belum diperbaiki, sedang diperbaiki, atau selesai), dan 
+      -> Melihat laporan: Admin dapat menampilkan daftar laporan jalan rusak. 
+      -> Filter laporan: Admin dapat memfilter laporan berdasarkan status (belum diperbaiki, sedang diperbaiki, selesai) dan "semua" untuk menampilkan semua data.
       -> Searching: Admin dapat mencari laporan berdasarkan nama jalan.
       -> Mengubah status laporan: Admin memiliki akses untuk mengedit status laporan dengan status "Belum diproses", "Sedang diproses", dan "Selesai" untuk mencerminkan progres perbaikan
 
 #### 3. Menu Pelapor
       Pelapor dapat:
-      -> Membuat laporan baru: Pelapor memasukkan informasi seperti nama jalan, kecamatan, deskripsi kerusakan, dan tingkat kerusakan (ringan, sedang, berat).
+      -> Membuat laporan baru: Pelapor memasukkan informasi seperti nama jalan, kecamatan, deskripsi kerusakan, dan tingkat kerusakan (ringan, sedang, berat) dan "semua" untuk menampilkan semua data.
       -> Melihat laporan: Pelapor dapat melihat laporan mereka sendiri
       -> Filter laoran: Pelapor dapat memfilter laporan berdasarkan tingkat kerusakan
       -> Searching: Pelapor dapat mencari laporan tertentu berdasarkan nama jalan.
@@ -51,12 +51,12 @@ Aplikasi ini diharapkan bisa menjadi solusi untuk memperbaiki infrastruktur jala
 
 
 ## 📍Penerapan 4 Pilar
-1. Encapsulation
+### 1. Encapsulation
    -> Menyembunyikan data objek dan hanya mengizinkan akses melalui metode khusus (getter/setter), untuk melindungi data tersebut.
 
    Penerapan:
    
-   a. Pada class UserModel
+#### a. Pada class UserModel
 
 
        public String getUsername() {
@@ -79,34 +79,148 @@ Aplikasi ini diharapkan bisa menjadi solusi untuk memperbaiki infrastruktur jala
          }
 
 
-   b. Pada class Pelapor
+#### b. Pada class Pelapor
    
-   c. Pada class Admin
 
-      public String getJabatan() {
-        return jabatan;}
+         public String getNamaLengkap() {
+             return namaLengkap;
+         }
+
+         public void setNamaLengkap(String namaLengkap) {
+             this.namaLengkap = namaLengkap;
+         }
+
+         public String getNoTelp() {
+             return noTelp;
+         }
+
+         public void setNoTelp(String noTelp) {
+             this.noTelp = noTelp;
+         }
+
+         public String getEmail() {
+             return email;
+         }
+
+         public void setEmail(String email) {
+             this.email = email;
+         }
 
 
-      public void setJabatan(String jabatan) {
-        this.jabatan = jabatan;}
+#### c. Pada class Admin
+
+           public String getJabatan() {
+             return jabatan;
+             }
+     
+           public void setJabatan(String jabatan) {
+             this.jabatan = jabatan;
+             }
 
 
 
    
-3. Abstract
+### 2. Abstract
    -> Menyederhanakan antarmuka dengan hanya menampilkan informasi penting dan menyembunyikan detail implementasi.
    
-   Penerapan:
+#### Penerapan pada class UserModel
    
-4. inheritance
+        public abstract class UserModel {
+         protected String username;
+         protected String password;
+         
+         public abstract ArrayList<Object[]> viewData();
+        }
+
+   
+### 3. inheritance
    -> Memungkinkan kelas anak mewarisi atribut dan metode dari kelas induk, sehingga kode bisa digunakan kembali.
    
    Penerapan:
    
-5. polymorphism
+#### Superclass: 
+##### UserModel
+
+        public abstract class UserModel {
+         protected String username;
+         protected String password;
+        }
+
+#### Subclass:
+##### Pelapor
+
+        public class Pelapor extends UserModel {
+         private String namaLengkap;
+         private String noTelp;
+         private String email;
+         private Connection conn;
+     
+         public Pelapor(String username, String password, String namaLengkap, String noTelp, String email) {
+             super(username, password);
+             this.namaLengkap = namaLengkap;
+             this.noTelp = noTelp;
+             this.email = email;
+         }
+
+##### Admin
+
+        public class Admin extends UserModel {
+         private String jabatan;
+         private Connection conn;
+     
+         public Admin(String username, String password, String jabatan) {
+             super(username, password);
+             this.jabatan = jabatan;
+         }
+     
+### 4. polymorphism
    -> Memungkinkan objek dari kelas yang berbeda untuk merespons metode yang sama dengan cara yang berbeda, tergantung jenis objeknya.
 
-   Penerapan:
+#### Penerapan pada class UserModel
+
+            @Override
+         public ArrayList<Object[]> viewData() {
+         ArrayList<Object[]> laporanList = new ArrayList<>();
+             conn = Database.connect(); 
+             try {
+                 // SQL query to retrieve data
+                 String query = "SELECT pelapor.nama_lengkap, pelapor.email, laporan.nama_jalan, laporan.kecamatan, laporan.tanggal_laporan, laporan.deskripsi, laporan.tingkat_kerusakan, laporan.status_laporan " +
+                                "FROM pelapor " +
+                                "JOIN laporan ON pelapor.id_user = laporan.id_user";
+     
+                 // Prepare the statement
+                 PreparedStatement stmt = conn.prepareStatement(query);
+                 ResultSet rs = stmt.executeQuery(); 
+     
+                 while (rs.next()) { 
+                     Object[] laporan = new Object[8];
+                     laporan[0] = rs.getString("nama_lengkap");
+                     laporan[1] = rs.getString("email");
+                     laporan[2] = rs.getString("nama_jalan");
+                     laporan[3] = rs.getString("kecamatan");
+                     laporan[4] = rs.getTimestamp("tanggal_laporan");
+                     laporan[5] = rs.getString("deskripsi");
+                     laporan[6] = rs.getString("tingkat_kerusakan");
+                     laporan[7] = rs.getString("status_laporan");
+                     laporanList.add(laporan); 
+                 }
+     
+                 rs.close();
+                 stmt.close(); 
+     
+             } catch (Exception e) {
+                 e.printStackTrace();
+             } finally {
+                 try {
+                     if (conn != null && !conn.isClosed()) {
+                         conn.close();
+                     }
+                 } catch (Exception ex) {
+                     ex.printStackTrace();
+                 }
+             }
+             return laporanList;
+         }
 
    
 ## 📍Screenshoot Output
@@ -136,7 +250,10 @@ Aplikasi ini diharapkan bisa menjadi solusi untuk memperbaiki infrastruktur jala
    Tampilan Edit Status Laporan, admin dapat memilih laporan tertentu dari daftar laporan yang sudah ada untuk diperbarui. Setelah laporan dipilih, sistem akan memberikan pilihan untuk mengubah status laporan sesuai kebutuhan, seperti dari "belum diproses" menjadi "sedang diproses" atau "selesai". Perubahan status ini akan disimpan ke dalam database dan menjadi rekam jejak laporan yang dapat dilihat kembali kapan saja oleh admin.
    
 9. Tampilan Menu Lihat Laporan Admin
-  
+    
+  ![image](https://github.com/user-attachments/assets/34ce0df6-ffb5-4acb-960d-1ab663902db2)
+
+Pada menu Lihat Laporan, pelapor dapat mengakses daftar laporan jalan rusak yang telah tersimpan dalam Aplikasi. Daftar ini menampilkan informasi lengkap, seperti nama jalan, kecamatan, tanggal laporan, deskripsi kerusakan, tingkat kerusakan, dan status laporan. Tampilan ini memberikan transparansi kepada pelapor untuk mengetahui laporan apa saja yang sudah ada dalam Aplikasi dan mempermudah mereka memantau laporan secara menyeluruh. 
   
 10. Tampilan Menu Pelapor
     
