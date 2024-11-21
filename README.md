@@ -7,14 +7,14 @@ Kelompok 6A
 
 ## 📍Penjelasan Aplikasi Pelaporan dan Monitoring Jalan Rusak di Kota Samarinda
 
-Aplikasi Sistem Pelaporan dan Monitoring Jalan Rusak di Kota Samarinda adalah perangkat lunak berbasis Java yang dirancang untuk membantu masyarakat melaporkan kondisi jalan rusak serta memfasilitasi Dinas Pekerjaan Umum (DPU) dalam memantau dan mengelola laporan tersebut secara efisien. Menggunakan teknologi Java Swing untuk antarmuka pengguna (GUI) dan MySQL sebagai basis data, aplikasi ini menyediakan platform yang terstruktur untuk mencatat, menyimpan, dan mengelola informasi terkait kerusakan jalan.
+Aplikasi Pelaporan dan Monitoring Jalan Rusak di Kota Samarinda adalah perangkat lunak berbasis Java yang dirancang untuk membantu masyarakat melaporkan kondisi jalan rusak serta memfasilitasi Dinas Pekerjaan Umum (DPU) dalam memantau dan mengelola laporan tersebut secara efisien. Menggunakan teknologi Java Swing untuk antarmuka user (GUI) dan MySQL sebagai basis data, aplikasi ini menyediakan platform yang terstruktur untuk mencatat, menyimpan, dan mengelola informasi terkait kerusakan jalan.
 
 Tujuan utama aplikasi ini adalah menjadi sarana efektif bagi masyarakat Kota Samarinda untuk melaporkan kondisi jalan rusak, sekaligus mempermudah Dinas Pekerjaan Umum dalam mengelola laporan dengan lebih cepat, terorganisir, dan transparan. Dengan aplikasi ini, proses perbaikan jalan diharapkan dapat dilakukan secara lebih efisien, meningkatkan kualitas pelayanan publik dalam infrastruktur jalan.
 
 ### Fitur Utama Aplikasi
 
 #### 1. Login dan Registrasi
-     -> Login: Pengguna (admin atau pelapor) dapat masuk ke sistem dengan memasukkan username dan password. Sistem akan memverifikasi kredensial dan mengarahkan pengguna ke menu sesuai peran mereka.
+     -> Login: User (admin atau pelapor) dapat masuk ke aplikasi dengan memasukkan username dan password. Aplikasi akan memverifikasi kredensial dan mengarahkan user ke menu sesuai peran mereka.
      -> Registrasi: Calon pelapor yang belum memiliki akun dapat mendaftarkan diri dengan memasukkan data pribadi, seperti nama, email, dan nomor telepon serta membuat username dan password.
 
 #### 2. Menu Admin
@@ -32,10 +32,10 @@ Tujuan utama aplikasi ini adalah menjadi sarana efektif bagi masyarakat Kota Sam
       -> Searching: Pelapor dapat mencari laporan tertentu berdasarkan nama jalan.
 
 #### 4. Manajemen Data
-      -> Aplikasi menggunakan database MySQL untuk menyimpan informasi pengguna, laporan, dan data pendukung lainnya. Data dapat diakses dan diperbarui secara real-time melalui antarmuka aplikasi.
+      -> Aplikasi menggunakan database MySQL untuk menyimpan informasi user, laporan, dan data pendukung lainnya. Data dapat diakses dan diperbarui secara real-time melalui antarmuka aplikasi.
 
 #### 5. Teknologi yang Digunakan
-      -> Aplikasi ini dibuat menggunakan Java Swing untuk tampilan antarmuka (GUI) dan MySQL sebagai tempat penyimpanan data. Jadi, semua data laporan dan akun pengguna disimpan dengan rapi.
+      -> Aplikasi ini dibuat menggunakan Java Swing untuk tampilan antarmuka (GUI) dan MySQL sebagai tempat penyimpanan data. Jadi, semua data laporan dan akun user disimpan dengan rapi.
 
 ### Manfaat Aplikasi
    #### Bagi Masyarakat:
@@ -247,7 +247,7 @@ Aplikasi ini diharapkan bisa menjadi solusi untuk memperbaiki infrastruktur jala
    
     ![image](https://github.com/user-attachments/assets/eb39cfda-83fd-47e4-8ef2-64deb3dfac3e)
 
-   Tampilan Edit Status Laporan, admin dapat memilih laporan tertentu dari daftar laporan yang sudah ada untuk diperbarui. Setelah laporan dipilih, sistem akan memberikan pilihan untuk mengubah status laporan sesuai kebutuhan, seperti dari "belum diproses" menjadi "sedang diproses" atau "selesai". Perubahan status ini akan disimpan ke dalam database dan menjadi rekam jejak laporan yang dapat dilihat kembali kapan saja oleh admin.
+   Tampilan Edit Status Laporan, admin dapat memilih laporan tertentu dari daftar laporan yang sudah ada untuk diperbarui. Setelah laporan dipilih, aplikasi akan memberikan pilihan untuk mengubah status laporan sesuai kebutuhan, seperti dari "belum diproses" menjadi "sedang diproses" atau "selesai". Perubahan status ini akan disimpan ke dalam database dan menjadi rekam jejak laporan yang dapat dilihat kembali kapan saja oleh admin.
    
 5. Tampilan Menu Lihat Laporan Admin
     
@@ -259,13 +259,13 @@ Tampilan ini memberikan transparansi kepada pelapor untuk mengetahui laporan apa
     
     ![image](https://github.com/user-attachments/assets/357fe79f-4074-4e46-8d40-0936d0cb0930)
 
-   Tampilan menu pelapor ini adalah menu milik pelapor yang sudah berhasil masuk ke aplikasi, , pelapor akan diberikan dua pilihan utama, yaitu Buat Laporan dan Lihat Laporan. Kedua pilihan ini dirancang untuk mempermudah pelapor dalam membuat laporan jalan rusak dan memantau laporan yang sudah diajukan. Selain itu, pelapor juga dapat memilih untuk keluar dari aplikasi setelah selesai menggunakan sistem.
+   Tampilan menu pelapor ini adalah menu milik pelapor yang sudah berhasil masuk ke aplikasi, , pelapor akan diberikan dua pilihan utama, yaitu Buat Laporan dan Lihat Laporan. Kedua pilihan ini dirancang untuk mempermudah pelapor dalam membuat laporan jalan rusak dan memantau laporan yang sudah diajukan. Selain itu, pelapor juga dapat memilih untuk keluar dari aplikasi setelah selesai menggunakan aplikasi.
 
 7. Tampilan Menu Buat Laporan
     
     ![image](https://github.com/user-attachments/assets/6f32a68e-3c9d-4822-9fda-1867df04565c)
 
-    Jika pelapor memilih Buat Laporan, sistem akan meminta pengguna untuk mengisi detail laporan, seperti nama jalan, kecamatan, tingkat kerusakan jalan, dan deskripsi. Setelah data diinput, laporan akan disimpan ke dalam database. 
+    Jika pelapor memilih Buat Laporan, aplikasi akan meminta user untuk mengisi detail laporan, seperti nama jalan, kecamatan, tingkat kerusakan jalan, dan deskripsi. Setelah data diinput, laporan akan disimpan ke dalam database. 
    
 8. Tampilan Menu Lihat Laporan Pelapor
     
