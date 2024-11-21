@@ -16,6 +16,7 @@ Kelompok 6A
    b. Pada class Pelapor
    
    c. Pada class Admin
+   
 2. Abstract
    -> Menyederhanakan antarmuka dengan hanya menampilkan informasi penting dan menyembunyikan detail implementasi.
    
