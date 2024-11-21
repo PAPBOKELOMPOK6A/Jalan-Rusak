@@ -22,7 +22,7 @@ Tujuan utama aplikasi ini adalah menjadi sarana efektif bagi masyarakat Kota Sam
       -> Melihat laporan: Admin dapat menampilkan daftar laporan jalan rusak. 
       -> Filter laporan: Admin dapat memfilter laporan berdasarkan status (belum diperbaiki, sedang diperbaiki, selesai) dan "semua" untuk menampilkan semua data.
       -> Searching: Admin dapat mencari laporan berdasarkan nama jalan.
-      -> Mengubah status laporan: Admin memiliki akses untuk mengedit status laporan dengan status "Belum diproses", "Sedang diproses", dan "Selesai" untuk mencerminkan progres perbaikan
+      -> Mengubah status laporan: Admin memiliki akses untuk mengedit status laporan dengan status "Belum diproses", "Sedang diproses", dan "Selesai" untuk mencerminkan progres perbaikan.
 
 #### 3. Menu Pelapor
       Pelapor dapat:
