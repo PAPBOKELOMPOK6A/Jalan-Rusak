@@ -253,7 +253,7 @@ Aplikasi ini diharapkan bisa menjadi solusi untuk memperbaiki infrastruktur jala
     
   ![image](https://github.com/user-attachments/assets/34ce0df6-ffb5-4acb-960d-1ab663902db2)
 
-Pada menu Lihat Laporan, pelapor dapat mengakses daftar laporan jalan rusak yang telah tersimpan dalam Aplikasi. Daftar ini menampilkan informasi lengkap, seperti nama jalan, kecamatan, tanggal laporan, deskripsi kerusakan, tingkat kerusakan, dan status laporan. Tampilan ini memberikan transparansi kepada pelapor untuk mengetahui laporan apa saja yang sudah ada dalam Aplikasi dan mempermudah mereka memantau laporan secara menyeluruh. 
+Tampilan ini memberikan transparansi kepada pelapor untuk mengetahui laporan apa saja yang sudah ada dalam Aplikasi dan mempermudah mereka memantau laporan secara menyeluruh. 
   
 10. Tampilan Menu Pelapor
     
