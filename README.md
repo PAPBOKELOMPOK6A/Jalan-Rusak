@@ -27,8 +27,8 @@ Tujuan utama aplikasi ini adalah menjadi sarana efektif bagi masyarakat Kota Sam
 #### 3. Menu Pelapor
       Pelapor dapat:
       -> Membuat laporan baru: Pelapor memasukkan informasi seperti nama jalan, kecamatan, deskripsi kerusakan, dan tingkat kerusakan (ringan, sedang, berat) dan "semua" untuk menampilkan semua data.
-      -> Melihat laporan: Pelapor dapat melihat laporan mereka sendiri
-      -> Filter laoran: Pelapor dapat memfilter laporan berdasarkan tingkat kerusakan
+      -> Melihat laporan: Pelapor dapat melihat laporan mereka sendiri.
+      -> Filter laoran: Pelapor dapat memfilter laporan berdasarkan tingkat kerusakan.
       -> Searching: Pelapor dapat mencari laporan tertentu berdasarkan nama jalan.
 
 #### 4. Manajemen Data
