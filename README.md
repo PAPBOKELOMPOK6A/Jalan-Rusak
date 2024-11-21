@@ -16,18 +16,26 @@ Kelompok 6A
    b. Pada class Pelapor
    
    c. Pada class Admin
+
+   "    public String getJabatan() {
+        return jabatan;
+    }
+
+    public void setJabatan(String jabatan) {
+        this.jabatan = jabatan;
+    }"
    
-2. Abstract
+3. Abstract
    -> Menyederhanakan antarmuka dengan hanya menampilkan informasi penting dan menyembunyikan detail implementasi.
    
    Penerapan:
    
-3. inheritance
+4. inheritance
    -> Memungkinkan kelas anak mewarisi atribut dan metode dari kelas induk, sehingga kode bisa digunakan kembali.
    
    Penerapan:
    
-4. polymorphism
+5. polymorphism
    -> Memungkinkan objek dari kelas yang berbeda untuk merespons metode yang sama dengan cara yang berbeda, tergantung jenis objeknya.
 
    Penerapan:
