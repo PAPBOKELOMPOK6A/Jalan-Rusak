@@ -17,13 +17,15 @@ Kelompok 6A
    
    c. Pada class Admin
 
-   "    public String getJabatan() {
+
+       public String getJabatan() {
         return jabatan;
     }
 
     public void setJabatan(String jabatan) {
         this.jabatan = jabatan;
-    }"
+    }
+
    
 3. Abstract
    -> Menyederhanakan antarmuka dengan hanya menampilkan informasi penting dan menyembunyikan detail implementasi.
